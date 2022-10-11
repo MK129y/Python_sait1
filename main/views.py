@@ -14,3 +14,6 @@ def about(request):
 
 def create(request):
     return render(request, 'main/create.html')
+
+def about12(request):
+    return render(request, 'main/about1.html')

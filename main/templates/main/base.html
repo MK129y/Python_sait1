@@ -7,6 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block titel%}{% endblock %}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'home5'%}">Магазин</a>
+    <a class="me-5 py-2 text-dark text-decoration-none" href="{% url 'about5'%}">Информация</a>
+    <a class="me-5 py-2 text-dark text-decoration-none" href="{% url 'create5'%}">Создать</a>
+    <a class="me-5 py-2 text-dark text-decoration-none" href="{% url 'about1'%}">Путешествия</a>
+    </nav>
+
 </head>
 <body>
     <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
@@ -15,12 +24,13 @@
         <span class="fs-4 ms-5">MSW</span>
       </a>
 
-      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'home5'%}">Магазин</a>
-        <a class="me-5 py-2 text-dark text-decoration-none" href="{% url 'about5'%}">Информация</a>
-        <a class="me-5 py-2 text-dark text-decoration-none" href="{% url 'create5'%}">Создать</a>
+<!--      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">-->
+<!--        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'home5'%}">Магазин</a>-->
+<!--        <a class="me-5 py-2 text-dark text-decoration-none" href="{% url 'about5'%}">Информация</a>-->
+<!--        <a class="me-5 py-2 text-dark text-decoration-none" href="{% url 'create5'%}">Создать</a>-->
+<!--        <a class="me-5 py-2 text-dark text-decoration-none" href="{% url 'about1'%}">Путешествия</a>-->
 
-      </nav>
+<!--      </nav>-->
     </div>
     <div class="container">
         {% block content %} {% endblock %}
